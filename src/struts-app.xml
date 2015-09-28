@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<package name="example" extends="struts-default,json-default" namespace="/">
+	<global-results>
+		<result name="tojsp" type="dispatcher">${gotourl}</result>
+    	<result name="toaction" type="redirect">${gotourl}</result>
+	</global-results>
+   	<action name="test_*" class="com.jb.action.TestAction" method="{1}">
+        <result>/index.jsp</result>
+    </action>
+    <action name="keyInfo_*" class="com.jb.action.KeyInfoAction" method="{1}">
+        <result>/app/keyInfoList.jsp</result>
+        <result name="check">/app/check.jsp</result>
+    </action>
+    <action name="oca_*" class="com.jb.action.OCommodityAction" method="{1}">
+        <result>/app/ocommodityList.jsp</result>
+        <result name="check">/app/check.jsp</result>
+    </action>
+    <action name="login_*" class="com.jb.action.LoginAction" method="{1}">
+        <result>index.jsp</result>
+        <result name="error">login.jsp</result>
+    </action>
+    <action name="systemInfo_*" class="com.jb.action.SystemInfoAction" method="{1}">
+        <result>/app/systemInfoList.jsp</result>
+        <result name="check">/app/check.jsp</result>
+    </action>
+    <action name="jbLog_*" class="com.jb.action.JBLogAction" method="{1}">
+        <result>/app/jbLogList.jsp</result> 
+        <result name="check">/app/check.jsp</result>
+    </action>
+    <action name="cclass_*" class="com.jb.action.CClassifyAction" method="{1}">
+        <result>/app/cclassList.jsp</result> 
+        <result name="check">/app/check.jsp</result>
+    </action>
+    <action name="hsdata_*" class="com.jb.action.UrlDataAction"
+			method="{1}">
+		<result name="getJson" type="json">
+			<param name="encoding">UTF-8</param>
+			<param name="root">jsonData</param>
+			<param name="excludeNullProperties">true</param>
+		</result>
+		<result name="hq">/hq.jsp</result>
+		<result name="order">/order.jsp</result>
+		<result name="orderList1">/orderList1.jsp</result>
+	</action>
+</package>
+
+<!-- <package name="exp2" namespace="/hs"
+		extends="json-default">
+		<global-results>
+			<result name="check" type="json">
+				<param name="encoding">UTF-8</param>
+				<param name="root">msg</param>
+				<param name="excludeNullProperties">true</param>
+			</result>
+		</global-results>
+		<action name="hsdata_*" class="com.jb.action.UrlDataAction"
+			method="{1}">
+			<result name="getJson" type="json">
+				<param name="encoding">UTF-8</param>
+				<param name="root">jsonData</param>
+				<param name="excludeNullProperties">true</param>
+			</result>
+		</action>
+	</package> -->
+</struts>

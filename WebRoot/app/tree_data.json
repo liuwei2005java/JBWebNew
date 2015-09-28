@@ -1,0 +1,29 @@
+[{
+	"text":"基础设置",
+	"state":"open",
+	"children":[{
+		"id":"j1",
+		"text":"Key信息维护",
+		"attributes":{
+				"url":"keyInfo_list.action"
+		}
+	},{
+		"id":"j2",
+		"text":"自选商品",
+		"attributes":{
+				"url":"oca_list.action"
+		}
+	},{
+		"id":"j3",
+		"text":"系统设置",
+		"attributes":{
+				"url":"systemInfo_list.action"
+		}
+	},{
+		"id":"j4",
+		"text":"竞标日志",
+		"attributes":{
+				"url":"jbLog_list.action"
+		}
+	}]
+}]

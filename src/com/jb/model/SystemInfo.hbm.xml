@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-11-24 18:26:44 by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="com.jb.model.SystemInfo" table="SYSTEMINFO">
+        <id name="sysId" type="string">
+            <column name="SYS_ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="isTest" type="int">
+            <column name="IS_TEST" />
+        </property>
+        <property name="url" type="string">
+            <column name="URL" length="200"/>
+        </property>
+        <property name="isAddCut" type="int">
+            <column name="IS_ADD_CUT"/>
+        </property>
+        <property name="orderParam" type="string">
+            <column name="ORDER_PARAM_VAL" length="100" />
+        </property>
+        <property name="localCatalog" type="string">
+            <column name="LOCAL_CATALOG" length="200" />
+        </property>
+        <property name="jbHours" type="string">
+            <column name="JB_HOURS" length="20" />
+        </property>
+        <property name="urlContext" type="string">
+            <column name="URL_CONTEXT" length="200"/>
+        </property>
+    </class>
+</hibernate-mapping>

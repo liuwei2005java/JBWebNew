@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-11-24 18:26:44 by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="com.jb.model.OCommodityAdjust" table="OPTIONAL_COMMODITY_ADJUST">
+        <id name="ocaId" type="string">
+            <column name="OCA_ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="bcode" type="string">
+            <column name="B_CODE" length="100" />
+        </property>
+        <property name="btype" type="string">
+            <column name="B_TYPE" length="100" />
+        </property>
+        <property name="bstorage" type="string">
+            <column name="B_STORAGE" length="100" />
+        </property>
+        <property name="dealNum" type="string">
+            <column name="DEAL_NUM" length="100" />
+        </property>
+        <property name="startPrice" type="string">
+            <column name="START_PRICE" length="100" />
+        </property>
+        <property name="ocaDate" type="string">
+            <column name="OCA_DATE" length="100" />
+        </property>
+        <property name="lowPrice" type="string">
+            <column name="LOW_PRICE" length="20" />
+        </property>
+        <property name="delayTime" type="string">
+            <column name="DELAY_TIME" length="20" />
+        </property>
+        <property name="orderNo" type="int">
+            <column name="ORDERNO" />
+        </property>
+        <property name="isLow" type="string">
+            <column name="IS_LOW" length="3"/>
+        </property>
+        <property name="addLowPrice" type="string">
+            <column name="ADD_LOW_PRICE" length="20" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="100" />
+        </property>
+        <many-to-one name="keyInfo" class="com.jb.model.KeyInfo" fetch="select">
+            <column name="KEY_ID" length="32" />
+        </many-to-one>
+        <many-to-one name="commodityClassify" class="com.jb.model.CommodityClassify" fetch="select">
+            <column name="CC_ID" length="32" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

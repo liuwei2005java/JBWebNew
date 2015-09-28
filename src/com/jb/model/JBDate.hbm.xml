@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-11-24 18:26:44 by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="com.jb.model.JBDate" table="JB_TIME">
+        <id name="jbId" type="string">
+            <column name="ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="dateInfo" type="timestamp">
+            <column name="DATE_INFO" />
+        </property>
+        <property name="jbDate" type="string">
+            <column name="JB_DATE" length="200"/>
+        </property>
+        <property name="jbTimeslong" type="string">
+            <column name="JB_TIMES_LONG" length="200"/>
+        </property>
+    </class>
+</hibernate-mapping>

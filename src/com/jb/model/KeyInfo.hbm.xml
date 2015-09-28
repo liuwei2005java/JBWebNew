@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-11-24 18:26:44 by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="com.jb.model.KeyInfo" table="KEY_INFO">
+        <id name="keyId" type="string">
+            <column name="KEY_ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="userName" type="string">
+            <column name="USERNAME" length="100" />
+        </property>
+        <property name="passWord" type="string">
+            <column name="PASSWORD" length="100" />
+        </property>
+        <property name="keyWd" type="string">
+            <column name="KEYPWD" length="100" />
+        </property>
+        <property name="submit" type="string">
+            <column name="SUBMIT" length="100" />
+        </property>
+        <property name="kcode" type="string">
+            <column name="KCODE" length="100" />
+        </property>
+        <property name="tempImgNm" type="string">
+            <column name="TEMPIMG_NAME" length="100" />
+        </property>
+        <property name="loginSourceNm" type="string">
+            <column name="LOGIN_SOURCE_NM" length="100" />
+        </property>
+        <property name="isUse" type="int">
+            <column name="IS_USE"/>
+        </property>
+        
+        <set name="ocommodityAdjusts" inverse="true">
+            <key>
+                <column name="KEY_ID" length="32" />
+            </key>
+            <one-to-many class="com.jb.model.OCommodityAdjust" />
+        </set>
+        <set name="ocommodityRecords" inverse="true">
+            <key>
+                <column name="KEY_ID" length="32" />
+            </key>
+            <one-to-many class="com.jb.model.OCommodityRecord" />
+        </set>
+        <set name="switchStatuss" inverse="true">
+            <key>
+                <column name="KEY_ID" length="32" />
+            </key>
+            <one-to-many class="com.jb.model.SwitchStatus" />
+        </set>
+        <set name="jbLogs" inverse="true">
+            <key>
+                <column name="KEY_ID" length="32" />
+            </key>
+            <one-to-many class="com.jb.model.JBLog" />
+        </set>
+    </class>
+</hibernate-mapping>

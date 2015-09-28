@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+        <property name="hibernate.cache.use_query_cache">false</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.pool_size">100</property>
+        <property name="hibernate.defaultAutoCommit">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+        <property name="hibernate.hbm2ddl.auto">none</property>
+        <property name="hibernate.query.substitutions">true=1,flase=0</property>
+        <property name="hibernate.show_sql">false</property>
+        
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@127.0.0.1:1521:orcl</property>
+        <property name="hibernate.connection.username">jbweb</property>
+        <property name="hibernate.connection.password">jbweb</property>
+        
+        <mapping resource="com/jb/model/KeyInfo.hbm.xml" />
+        <mapping resource="com/jb/model/OCommodityRecord.hbm.xml" />
+        <mapping resource="com/jb/model/OCommodityAdjust.hbm.xml" />
+        <mapping resource="com/jb/model/SwitchStatus.hbm.xml" />
+        <mapping resource="com/jb/model/JBLog.hbm.xml" />
+        <mapping resource="com/jb/model/SystemInfo.hbm.xml" />
+        <mapping resource="com/jb/model/CommodityClassify.hbm.xml" />
+        <mapping resource="com/jb/model/JBDate.hbm.xml" />
+        <mapping resource="com/jb/model/OCommodityRecordAll.hbm.xml" />
+        
+    </session-factory>
+</hibernate-configuration>

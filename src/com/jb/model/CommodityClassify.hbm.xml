@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-11-24 18:26:44 by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="com.jb.model.CommodityClassify" table="COMMODITY_CLASSIFY">
+        <id name="ccId" type="string">
+            <column name="CC_ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="btype" type="string">
+            <column name="B_TYPE" length="100" />
+        </property>
+        <property name="bstorage" type="string">
+            <column name="B_STORAGE" length="100" />
+        </property>
+        <property name="startPrice" type="string">
+            <column name="START_PRICE" length="100" />
+        </property>
+        <property name="lowPrice" type="string">
+            <column name="LOW_PRICE" length="20" />
+        </property>
+        <property name="jxnum" type="int">
+            <column name="JX_NUM" />
+        </property>
+        <property name="classLevel" type="int">
+            <column name="CLASS_LEVEL" />
+        </property>
+        <property name="levelOrder" type="int">
+            <column name="LEVEL_ORDER" />
+        </property>
+        <property name="currentDate" type="string">
+            <column name="CURRENTDATE" length="100" />
+        </property>
+        <property name="dealNum" type="string">
+            <column name="DEAL_NUM" length="100" />
+        </property>
+        <property name="ccCode" type="string">
+            <column name="CC_CODE" length="4000" />
+        </property>
+        <property name="keyId" type="string">
+            <column name="KEY_ID" length="32" />
+        </property>
+        <property name="addLowPrice" type="string">
+            <column name="ADD_LOW_PRICE" length="20" />
+        </property>
+        
+        <set name="ocommodityAdjusts" inverse="true">
+            <key>
+                <column name="KEY_ID" length="32" />
+            </key>
+            <one-to-many class="com.jb.model.OCommodityAdjust" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebRoot/app/tree_data.json=UTF-8
+encoding//WebRoot/resources/JEasyUI/locale/easyui-lang-cz.js=UTF-8
+encoding//WebRoot/resources/JEasyUI/locale/easyui-lang-zh_CN.js=UTF-8
+encoding//WebRoot/resources/JEasyUI/locale/easyui-lang-zh_TW.js=UTF-8
+encoding//src/app.properties=GBK
+encoding//src/com/jb/action/LoginAction.java=UTF-8
+encoding//src/com/jb/filter/SessionFilter.java=UTF-8
+encoding//src/com/jb/unit/ProcessorMain.java=UTF-8
+encoding//src/com/jb/unit/ProcessorMainInfo.java=UTF-8

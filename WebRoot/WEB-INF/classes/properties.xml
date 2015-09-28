@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<template>
+<!-- 五肉联 -->
+	 <example>
+			<!--用户名称-->
+ 	 		<username>600009</username>
+ 	 		<!-- 密码 -->
+ 	 		<password>600009</password>
+ 	 		<!-- key密码 -->
+ 	 		<keypwd>600009</keypwd>
+ 	 		<!-- submit编码 -->
+ 	 		<submit>%CC%E1%BD%BB</submit>
+ 	 		<!-- key的code -->
+ 	 		<kcode>Q1JRK50qU6GVn5o</kcode>
+ 	 		<!-- 验证码黑白图片的名称 -->
+ 	 		<tempImgName>heibai600009.jpg</tempImgName>
+ 	 		<!-- 登录页面源码存放的文件名 -->
+ 	 		<loginSourceName>denglu600009.txt</loginSourceName>
+ 	 		<!-- 提交订单的参数 -->
+	 	 	<params>
+	 	 		<!-- 一共有几个标 -->
+	 	 		<num>3</num>
+	 	 		<!-- &要是用&amp;代替，否则会出错 -->
+	 	 		<param1>orderPrice=18140&amp;code=GSDR131B004&amp;totalAmount=300&amp;orderFlag=</param1>
+	 	 		<param2>orderPrice=18140&amp;code=GSDR131B005&amp;totalAmount=300&amp;orderFlag=</param2>
+	 	 		<param3>orderPrice=18140&amp;code=GSDR131B006&amp;totalAmount=300&amp;orderFlag=</param3>
+	 	 	</params>
+	 	 	<times>
+	 	 		<!-- 一共有几个延迟时间，同params里的个数一样 -->
+	 	 		<num>3</num>
+	 	 		<time1>0</time1>
+	 	 		<time2>0</time2>
+	 	 		<time3>0</time3>
+	 	 	</times>
+	 </example>
+ 	 <example>
+			<!--用户名称-->
+ 	 		<username>600123</username>
+ 	 		<!-- 密码 -->
+ 	 		<password>600123</password>
+ 	 		<!-- key密码 -->
+ 	 		<keypwd>600123</keypwd>
+ 	 		<!-- submit编码 -->
+ 	 		<submit>%CC%E1%BD%BB</submit>
+ 	 		<!-- key的code -->
+ 	 		<kcode>btFJSq86504312u</kcode>
+ 	 		<!-- 验证码黑白图片的名称 -->
+ 	 		<tempImgName>heibai600123.jpg</tempImgName>
+ 	 		<!-- 登录页面源码存放的文件名 -->
+ 	 		<loginSourceName>denglu600123.txt</loginSourceName>
+ 	 		<!-- 提交订单的参数 -->
+	 	 	<params>
+	 	 		<!-- 一共有几个标 -->
+	 	 		<num>4</num>
+	 	 		<!-- &要是用&amp;代替，否则会出错 -->
+	 	 		<param1>orderPrice=18140&amp;code=QHDR131B002&amp;totalAmount=300&amp;orderFlag=</param1>
+	 	 		<param2>orderPrice=22190&amp;code=HBDR131F003&amp;totalAmount=300&amp;orderFlag=</param2>
+	 	 		<param3>orderPrice=22190&amp;code=HBDR131F004&amp;totalAmount=300&amp;orderFlag=</param3>
+	 	 		<param4>orderPrice=22190&amp;code=HBDR131F005&amp;totalAmount=300&amp;orderFlag=</param4>
+	 	 	</params>
+	 	 	<!-- 延迟时间，毫秒 -->
+	 	 	<times>
+	 	 		<!-- 一共有几个延迟时间，同params里的个数一样 -->
+	 	 		<num>4</num>
+	 	 		<time1>0</time1>
+	 	 		<time2>0</time2>
+	 	 		<time3>0</time3>
+	 	 		<time4>0</time4>
+	 	 	</times>
+	 </example>
+	 <example>
+			<!--用户名称-->
+ 	 		<username>600002</username>
+ 	 		<!-- 密码 -->
+ 	 		<password>600002</password>
+ 	 		<!-- key密码 -->
+ 	 		<keypwd>600002</keypwd>
+ 	 		<!-- submit编码 -->
+ 	 		<submit>%CC%E1%BD%BB</submit>
+ 	 		<!-- key的code -->
+ 	 		<kcode>rK8B6f43f4EEx3L</kcode>
+ 	 		<!-- 验证码黑白图片的名称 -->
+ 	 		<tempImgName>heibai600002.jpg</tempImgName>
+ 	 		<!-- 登录页面源码存放的文件名 -->
+ 	 		<loginSourceName>denglu600002.txt</loginSourceName>
+ 	 		<!-- 提交订单的参数 -->
+	 	 	<params>
+	 	 		<!-- 一共有几个标 -->
+	 	 		<num>4</num>
+	 	 		<!-- &要是用&amp;代替，否则会出错 -->
+	 	 		<param1>orderPrice=22450&amp;code=SDDR131F036&amp;totalAmount=300&amp;orderFlag=</param1>
+	 	 		<param2>orderPrice=22450&amp;code=SDDR131F037&amp;totalAmount=300&amp;orderFlag=</param2>
+	 	 		<param3>orderPrice=22450&amp;code=SDDR131F038&amp;totalAmount=300&amp;orderFlag=</param3>
+	 	 		<param4>orderPrice=22450&amp;code=SDDR131F039&amp;totalAmount=300&amp;orderFlag=</param4>
+	 	 	</params>
+	 	 	<times>
+	 	 		<!-- 一共有几个延迟时间，同params里的个数一样 -->
+	 	 		<num>4</num>
+	 	 		<time1>0</time1>
+	 	 		<time2>0</time2>
+	 	 		<time3>0</time3>
+	 	 		<time4>0</time4>
+	 	 	</times>
+	 </example>
+	 <example>
+			<!--用户名称-->
+ 	 		<username>600001</username>
+ 	 		<!-- 密码 -->
+ 	 		<password>600001</password>
+ 	 		<!-- key密码 -->
+ 	 		<keypwd>600001</keypwd>
+ 	 		<!-- submit编码 -->
+ 	 		<submit>%CC%E1%BD%BB</submit>
+ 	 		<!-- key的code -->
+ 	 		<kcode>OSCQ1DE15vBUWA2</kcode>
+ 	 		<!-- 验证码黑白图片的名称 -->
+ 	 		<tempImgName>heibai600001.jpg</tempImgName>
+ 	 		<!-- 登录页面源码存放的文件名 -->
+ 	 		<loginSourceName>denglu600001.txt</loginSourceName>
+ 	 		<!-- 提交订单的参数 -->
+	 	 	<params>
+	 	 		<!-- 一共有几个标 -->
+	 	 		<num>7</num>
+	 	 		<!-- &要是用&amp;代替，否则会出错 -->
+	 	 		<param1>orderPrice=18140&amp;code=GSDR131B002&amp;totalAmount=300&amp;orderFlag=</param1>
+	 	 		<param2>orderPrice=18140&amp;code=GSDR131B003&amp;totalAmount=300&amp;orderFlag=</param2>
+	 	 		<param3>orderPrice=22190&amp;code=BJDR131F001&amp;totalAmount=300&amp;orderFlag=</param3>
+	 	 		<param4>orderPrice=22190&amp;code=BJDR131F002&amp;totalAmount=300&amp;orderFlag=</param4>
+	 	 		<param5>orderPrice=22190&amp;code=BJDR131F003&amp;totalAmount=300&amp;orderFlag=</param5>
+	 	 		<param6>orderPrice=22190&amp;code=SXDR131F001&amp;totalAmount=300&amp;orderFlag=</param6>
+	 	 		<param7>orderPrice=22190&amp;code=SXDR131F002&amp;totalAmount=300&amp;orderFlag=</param7>
+	 	 	</params>
+	 	 	<times>
+	 	 		<!-- 一共有几个延迟时间，同params里的个数一样 -->
+	 	 		<num>7</num>
+	 	 		<time1>0</time1>
+	 	 		<time2>0</time2>
+	 	 		<time3>0</time3>
+	 	 		<time4>0</time4>
+	 	 		<time5>0</time5>
+	 	 		<time6>0</time6>
+	 	 		<time7>0</time7>
+	 	 	</times>
+	 </example>
+</template>
